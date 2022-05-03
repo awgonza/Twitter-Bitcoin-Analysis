@@ -116,7 +116,7 @@ count = 0
 file = input("What file would you like to write to?")
 f = open(file, "a")
 if(not path.exists('Btweets_clean_small.csv')):
-    newdf = pd.read_csv('Btweets_clean.csv', nrows = 500000, low_memory=False)
+    newdf = pd.read_csv('Btweets_clean.csv', nrows = 450000, low_memory=False)
     newdf.to_csv('Btweets_clean_small.csv', index=False)
 #f2 = open("verifiedTweets.txt", "w")
 """for i in Tweet_df.index:
